@@ -18,4 +18,9 @@ Planned features:
 Change log 2/27/15
 ---------------------
 Ground work started  
-Does some stuff
+
+Current TODO
+-------------
++ Finish boot process, needs to save config settings to a file
++ Everything else 
+
