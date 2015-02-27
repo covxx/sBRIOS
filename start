@@ -1,0 +1,26 @@
+#--------------------
+#BRIOS PRE-ALPHA 0.0.1 
+#@COVXX
+#--------------------
+def boot
+require 'io/console'
+require 'FileUtils'
+#File for saving things
+Print "Welcome to BRIOS..."
+Print "Please wait..."
+if #{thing} == 1
+  #This needs to call the 'desktop'
+elsif #{thing} == 0
+  Print "Lets get started"
+  Print "What do you want your username to be?: "
+  user_name = gets.chomp
+  Print "Choice a password: "
+  user_pass = gets.chomp
+  Print "Confirm your password: "
+  userpass_confirm = gets.chomp
+    if 
+      #{user_pass} == #{userpass_confirm}
+        Print "Password correct"
+        Print "One moment please.."
+      #File.open("FR.txt, OPITON") {|f| f.write("1")}
+end
