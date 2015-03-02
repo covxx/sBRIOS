@@ -34,20 +34,25 @@ Current TODO:
 
 Issues:
 -------------
- + issue #01: Not running due to some dumb issue
++ issue #01: Not running due to some dumb issue
+ 
+Ideas:
+-------------
++ Windows like login 'screen' 
 
 Change log:
 -------------
-00.00
++ 00.00.25
 	+ Changed name to mBRIOS
 	+ Started work on notes app
+	+ Worked on LOGOUT system
 	+ Added multi threading support 
 	+ Worked on boot process 
 	+ Fixed English
 	+ Debugging 
 	+ Other smaller things
-	+ Removed some unnecessary things from readme
-00.00.09
+	+ Removed some unnecessary things from read me
++ 00.00.09
 	+ Move first boot process to own statement 
 	+ Started work on the menu
 	+ Started work on login system 
@@ -56,7 +61,7 @@ Change log:
 	+ Updated README 
 	+ Small organization changes
 	
-0.0.01
++ 0.0.01
 	+ Ground work started 
 
 

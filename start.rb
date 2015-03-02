@@ -3,15 +3,13 @@
 #m|B|R|I|O|S
 #Modern Basic Ruby Input Output System
 #https://github.com/covxx/mBRIOS
-#@covxx
+#@covxx // contact me: covxx@cvoxo.com 
 #--------------------
-
-#Any thing that required
-require 'io/console'
-require 'FileUtils'
-require 'bcrypt' 
-require 'time'
-require 'thread'
+require 'io/console' #Working with files
+require 'FileUtils'  #Working with files
+require 'bcrypt'     #Encryption 
+require 'time'       #Time management  
+require 'thread'     #Multi Threading support
 
 
  def debug #simple thing to help debugging 
@@ -25,7 +23,7 @@ end
 	print "Checking if first run \n"
 	if #{frun} == 1
 		print "Booting mBRIOS please wait \n"
-		File.open("users.txt, r") 
+		#File.open("users.txt, r") 
 			login()
 		elsif #{frun} == 0 #Starts the first run process 
 			print "Starting first run process, please wait \n"
@@ -41,10 +39,10 @@ end
 		user_name = gets.chomp
 	print "Choose a password: \n"
 		user_pass = gets.chomp #this needs to be encrypted  
-	print "Confirm your password: \n"
+	print "Confirm your password: \n"  
 		userpass_confirm = gets.chomp
 			if 
-				user_pass == userpass_confirm
+				user_pass == userpass_confirm #This seemed like the simplest way to confirm passwords, remember Ruby was not made for this 
 				print "Password correct! \n"
 				print "One moment please.. \n"
 				sleep(3.seconds)
@@ -58,6 +56,12 @@ end
 	print "Type your user name: \n"
 	user_name_login = gets.chomp
 end
+
+ def logout #Logout system v0.0 | 
+	Print "Logging out.. \n"
+	sleep(3.seconds)
+	#Needs to close threads and files
+ end
 	
  def menu
 	print "Welcome to your desktop #{user_name}, Today's date is"+ time.inspect
@@ -73,28 +77,31 @@ end
 	#Below launches which program the user choice
 	if {app_launch} == 1 #This is causing an issue and so are the app launch things
 	  notes_app()
-		# elsif {app_launch} == 2
-			#calender_app()
-		# elsif {app_launch} == 3
-			#txteditor_app()
-		# elsif {app_launch} == 4
-		#	logout()
-		#elsif {app_launch} == 5
-		#	exit
+		elsif {app_launch} == 2
+			calender_app()
+		end
+			elsif {app_launch} == 3
+				txteditor_app()
+			end
+				elsif {app_launch} == 4
+					logout() #Homegrown stuff 
+				end
+				elsif {app_launch} == 5
+					exit  #using the built in exit function 
+				end
 	end
 	
  def notes_app
   Thread.new { #this may be a good to have each app work on its own thread
-
 	Print "Loading notes, please wait \n"
 	sleep(3.seconds)
 	Print "Which file would you like to open \n"
-	Dir.entries(folder)
+	Dir.entries(folder) #prints out the file names so user can choose
 	file_name_na = gets.chomp
 	Print "Loading file.. \n"
-	file.open("file_name_na, r+") #not sure if this works
+	file.open("file_name_na, r+") #grabs the 'file_name_na' var and uses it to open the file in read and write mode(not sure if this works))
 	sleep(3.seconds)
 }
 end	
 
-boot() #this is also causing an issue
+boot() #this is also causing an issue | Only method that needs to be called 
