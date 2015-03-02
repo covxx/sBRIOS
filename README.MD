@@ -4,6 +4,7 @@
 + |I|nput
 + |O|utput
 + |S|ystem
+
 -------------
 BRIOS is a low level OS 'modern OS' made in Ruby. Started as a crazy idea for my senior final 
 project. This runs from terminal by using "ruby start.rb") like anything else. As I'm still learning
