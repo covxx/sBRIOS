@@ -1,10 +1,10 @@
-+ B|asic 
-+ R|uby
-+ I|nput
-+ O|utput
-+ S|ystem
++ |B|asic 
++ |R|uby
++ |I|nput
++ |O|utput
++ |S|ystem
 
-Ver a 0.0.01
+Ver a 0.0.09
  ---S-M-N-S
  s: status (pre-alpha,alpha,beta,stable)
  M: Major change
@@ -20,15 +20,17 @@ Planned features:
 + Text editor
 
 
-Change log (Current)2/27/15
+Change log (Current)3/2/15
 ---------------------
-0.0.2
+00.00.09
+	+ Started work on the menu
+	+ Started work on login system 
 	+ Started work on password encryption 
 	+ fixed unnecessary syntax (thanks @nulljosh)
 	+ Updated README 
-	+Small organization changes
+	+ Small organization changes
 	
-0.0.1
+0.0.01
 	+ Ground work started  
 
 Current TODO
