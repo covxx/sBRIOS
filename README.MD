@@ -4,7 +4,7 @@
 + |O|utput
 + |S|ystem
 
-Ver a 0.0.09
+[![GitHub version](https://badge.fury.io/gh/covxx%2Fbrios.svg)](http://badge.fury.io/gh/covxx%2Fbrios)
  ---S-M-N-S
  s: status (pre-alpha,alpha,beta,stable)
  M: Major change
@@ -36,8 +36,10 @@ Change log (Current)3/2/15
 
 Current TODO
 -------------
-+ Finish first run process
-+ First run config/settings save to file 
-+ Enable password encryption 
+- [] Finish first run process
+- [] First run config/settings save to file 
+- [] Password encryption working
+- [] Get login system working
+
 
 
