@@ -23,6 +23,7 @@ Planned features:
 Change log (Current)3/2/15
 ---------------------
 00.00.09
+	+ Move first boot process to own statement 
 	+ Started work on the menu
 	+ Started work on login system 
 	+ Started work on password encryption 

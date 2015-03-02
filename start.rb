@@ -1,11 +1,11 @@
-=begin
---------------------
-B|R|I|O|S
-Basic Ruby Input Output System
-https://github.com/covxx/BRIOS
-@covxx
---------------------
-=end
+#
+#--------------------
+#B|R|I|O|S
+#Basic Ruby Input Output System
+#https://github.com/covxx/BRIOS
+#@covxx
+#--------------------
+
 #Any thing that needs to be required 
 require 'io/console'
 require 'FileUtils'
@@ -13,27 +13,35 @@ require 'bcrypt'
 
 
  def boot
-	Print "Starting to run BRIOS"
+	Print "Starting BRIOS"
 	Print "Please wait..."
+	Print "BRIOS booting..."
+	Print "Checking if first run""=
 	if #{frun} == 1
+		Print "Loading log in system, please wait"
 		File.open("users.txt, r") 
 		#This needs to call the log in
 		elsif #{frun} == 0 #Starts the first run process 
-			Print "Lets get started"
-			Print "What do you want your user name to be?: "
-			user_name = gets.chomp
-			Print "Choice a password: "
-			user_pass = gets.chomp #this needs to be encrypted  
-			Print "Confirm your password: "
-			userpass_confirm = gets.chomp
-				if 
-					user_pass == userpass_confirm
-					Print "Password correct!"
-					Print "One moment please.."
-					File.open("fr.txt, w") {|f| f.write("1")}
-end
+			Print "Starting first run process, please wait"
+	#Here will call the first boot process
+	end
 
-
+  def firstboot
+	Print "Welcome to BRIOS"
+	Print "This is the first boot process"
+	Print "What do you want your user name to be?: "
+		user_name = gets.chomp
+	Print "Choice a password: "
+		user_pass = gets.chomp #this needs to be encrypted  
+	Print "Confirm your password: "
+		userpass_confirm = gets.chomp
+			if 
+				user_pass == userpass_confirm
+				Print "Password correct!"
+				Print "One moment please.."
+				File.open("fr.txt, w") {|f| f.write("1")}
+	end
+  
   def login #Login system v0.01 | 
 	Print "Welcome to BRIOS" 
 	print "Users:" #Will print out a list of the users, probably from a txt file
@@ -59,4 +67,4 @@ end
 		elsif #{app_launch} == 3
 	
 		elsif #{app_launch} == 4
-	
+	end
