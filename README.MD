@@ -36,8 +36,10 @@ Change log (Current)3/2/15
 
 Current TODO
 -------------
-+ Finish first run process
-+ First run config/settings save to file 
-+ Enable password encryption 
+- [] Finish first run process
+- [] First run config/settings save to file 
+- [] Password encryption working
+- [] Get login system working
+
 
 
