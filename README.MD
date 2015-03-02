@@ -1,10 +1,15 @@
-B|asic 
-R|uby
-I|nput
-O|utput
-S|ystem
++ B|asic 
++ R|uby
++ I|nput
++ O|utput
++ S|ystem
 
-Ver a 0.1
+Ver a 0.0.01
+ ---S-M-N-S
+ s: status (pre-alpha,alpha,beta,stable)
+ M: Major change
+ N: Minimal Change
+ S: Very small change (things like spelling)
 -----------------
 BRIOS is a low level OS some how made in Ruby
 
@@ -15,12 +20,21 @@ Planned features:
 + Text editor
 
 
-Change log 2/27/15
+Change log (Current)2/27/15
 ---------------------
-Ground work started  
+0.0.2
+	+ Started work on password encryption 
+	+ fixed unnecessary syntax (thanks @nulljosh)
+	+ Updated README 
+	+Small organization changes
+	
+0.0.1
+	+ Ground work started  
 
 Current TODO
 -------------
-+ Finish boot process, needs to save config settings to a file
-+ Everything else 
++ Finish first run process
++ First run config/settings save to file 
++ Enable password encryption 
+
 
