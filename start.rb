@@ -1,4 +1,4 @@
-#
+
 #--------------------
 #B|R|I|O|S
 #Basic Ruby Input Output System
@@ -6,65 +6,73 @@
 #@covxx
 #--------------------
 
-#Any thing that needs to be required 
+#Any thing that required
 require 'io/console'
 require 'FileUtils'
 require 'bcrypt' 
-
+require 'time'
 
  def boot
-	Print "Starting BRIOS"
-	Print "Please wait..."
-	Print "BRIOS booting..."
-	Print "Checking if first run""=
+	print "Starting BRIOS"
+	print "Please wait..."
+	print "BRIOS booting"
+	print "Checking if first run"
 	if #{frun} == 1
-		Print "Loading log in system, please wait"
+		print " Loading login system, please wait "
 		File.open("users.txt, r") 
-		#This needs to call the log in
+			login()
 		elsif #{frun} == 0 #Starts the first run process 
-			Print "Starting first run process, please wait"
+			print "Starting first run process, please wait"
 	#Here will call the first boot process
 	end
+sleep(4.minutes)
 
   def firstboot
-	Print "Welcome to BRIOS"
-	Print "This is the first boot process"
-	Print "What do you want your user name to be?: "
+	print "Welcome to BRIOS"
+	print "This is the first boot process"
+	print "What do you want your user name to be?: "
 		user_name = gets.chomp
-	Print "Choice a password: "
+	print "Choice a password: "
 		user_pass = gets.chomp #this needs to be encrypted  
-	Print "Confirm your password: "
+	print "Confirm your password: "
 		userpass_confirm = gets.chomp
 			if 
 				user_pass == userpass_confirm
-				Print "Password correct!"
-				Print "One moment please.."
+				print "Password correct!"
+				print "One moment please.."
 				File.open("fr.txt, w") {|f| f.write("1")}
 	end
   
   def login #Login system v0.01 | 
-	Print "Welcome to BRIOS" 
-	print "Users:" #Will print out a list of the users, probably from a txt file
-	Print "What user do you want to log in as: "
+	print "Welcome to BRIOS" 
+	#print "Users:" #Will print out a list of the users, probably from a txt file
+	#print "What user do you want to log in as: "
+	print "Type your username: "
 	user_name_login = gets.chomp
 	
+	
  def menu
-	Print "Welcome to your desktop #{user_name}"
-	Print "Today's date is" puts "Current Time : " + time.inspect
-	Print "-------------------------------------"
-	Print "Menu"
-	Print "1. Notes"
-	Print "2. Calender"
-	Print "3. Text Editor"
-	Print "4. Log out"
-	Print "What would you like to launch?: "
+	print "Welcome to your desktop #{user_name}"
+	print "Today's date is"+ time.inspect
+	print "-------------------------------------"
+	print "Menu"
+	print "1. Notes"
+	print "2. Calender"
+	print "3. Text Editor"
+	print "4. Log out"
+	print "5. Exit"
+	print "What would you like to launch?: "
 	app_launch = gets.chomp
 	#Below launches which program the user choice
-	if #{app_launch} == 1
+	if {app_launch} == 1
 	
-		elsif #{app_launch} == 2
+		elsif {app_launch} == 2
 	
-		elsif #{app_launch} == 3
+		elsif {app_launch} == 3
 	
-		elsif #{app_launch} == 4
+		elsif {app_launch} == 4
+		
+		elsif {app_launch} == 5
+
 	end
+boot()
