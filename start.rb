@@ -10,7 +10,7 @@ require 'FileUtils'  #Working with files
 require 'bcrypt'     #Encryption 
 require 'time'       #Time management  
 require 'thread'     #Multi Threading support
-
+require 'yaml'       #Using YAML 
 
  def debug #simple thing to help debugging 
 	sleep(4.minutes)
@@ -78,7 +78,7 @@ end
 	print "What would you like to launch?: \n"
 	app_launch = gets.chomp
 	#Below launches which program the user choice
-	if {app_launch} == notes#This is causing an issue and so are the app launch things
+	if {app_launch} == notes #This is causing an issue and so are the app launch things
 	  notes_app()
 	end
 =begin
@@ -105,8 +105,8 @@ end
 	Print "Loading file.. \n"
 	file.open("file_name_na, r+") #grabs the 'file_name_na' var and uses it to open the file in read and write mode(not sure if this works))
 	sleep(3.seconds)
-}
-end	
+	end
+       }
+
 
 boot() #this is also causing an issue | Only method that needs to be called 
-end
