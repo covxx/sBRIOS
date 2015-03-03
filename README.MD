@@ -47,8 +47,7 @@ Ideas:
 
 Change log:
 -------------
-+ 00.00.
-	+ 
++ 00.00.26
 	+ Added documentation to the README
 	+ More work on login system
 	+ Fixed README up (I do this everyday)

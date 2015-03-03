@@ -20,10 +20,10 @@ end
  def boot
 	print "Starting mBRIOS \n"
 	sleep(2.seconds)
+	user = File.read("user.txt, r") 
 	print "Checking if first run \n"
 	if #{frun} == 1
 		print "Booting mBRIOS please wait \n"
-		File.open("user.txt, r") 
 			login()
 		elsif #{frun} == 0 #Starts the first run process 
 			print "Starting first run process, please wait \n"
@@ -57,6 +57,12 @@ end
 	user_name_login = gets.chomp
 	Print "Type your password: \n"
 	user_pass_login = gets.chomp 
+		if user_name_login == user
+		menu()
+			else #HAS to be a cleaner way to do this but for now this works
+			print "No user name found, please try again \n"
+			login() 
+		end
 end
 
  def logout #Logout system v0.0 | 
