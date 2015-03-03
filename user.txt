@@ -1,0 +1,3 @@
+user_name: test
+password: test
+#this will be encrypted before release 

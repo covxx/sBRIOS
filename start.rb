@@ -3,7 +3,7 @@
 #m|B|R|I|O|S
 #Modern Basic Ruby Input Output System
 #https://github.com/covxx/mBRIOS
-#@covxx // contact me: covxx@cvoxo.com 
+#@covxx // contact me: covxx@cvoxo.com //
 #--------------------
 require 'io/console' #Working with files
 require 'FileUtils'  #Working with files
@@ -23,7 +23,7 @@ end
 	print "Checking if first run \n"
 	if #{frun} == 1
 		print "Booting mBRIOS please wait \n"
-		#File.open("users.txt, r") 
+		File.open("user.txt, r") 
 			login()
 		elsif #{frun} == 0 #Starts the first run process 
 			print "Starting first run process, please wait \n"
@@ -51,10 +51,13 @@ end
   
   def login #Login system v0.01 | no multi user support till later
 	print "Welcome to mBRIOS \n" 
-	#print "Users:" #Will print out a list of the users, probably from a txt file
-	#print "What user do you want to log in as: "
+	#print "Users:" #Once multi user support is added this will print out the users 
+	#print "What user do you want to log in as: " #Grabs user name to login 
 	print "Type your user name: \n"
 	user_name_login = gets.chomp
+	Print "Type your password: \n"
+	user_pass_login = gets.chomp 
+	YAML.load(File.read("input.txt")) # => {"name" => "Peter", "age" => 26, "family_status" => :married } #
 end
 
  def logout #Logout system v0.0 | 
