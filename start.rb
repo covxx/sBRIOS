@@ -78,21 +78,22 @@ end
 	print "What would you like to launch?: \n"
 	app_launch = gets.chomp
 	#Below launches which program the user choice
-	if {app_launch} == 1 #This is causing an issue and so are the app launch things
+	if {app_launch} == notes#This is causing an issue and so are the app launch things
 	  notes_app()
-		elsif {app_launch} == 2
+	end
+=begin
+		elsif {app_launch} == Calender
 			calender_app()
 		end
-			elsif {app_launch} == 3
+			elsif {app_launch} == Text Editor 
 				txteditor_app()
 			end
-				elsif {app_launch} == 4
+				elsif {app_launch} == Logout
 					logout() #Homegrown stuff 
 				end
-				elsif {app_launch} == 5
+				elsif {app_launch} == exit
 					exit  #using the built in exit function 
-				end
-	end
+=end
 	
  def notes_app
   Thread.new { #this may be a good to have each app work on its own thread
@@ -108,3 +109,4 @@ end
 end	
 
 boot() #this is also causing an issue | Only method that needs to be called 
+end
