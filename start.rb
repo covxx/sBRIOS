@@ -57,7 +57,6 @@ end
 	user_name_login = gets.chomp
 	Print "Type your password: \n"
 	user_pass_login = gets.chomp 
-	YAML.load(File.read("input.txt")) # => {"name" => "Peter", "age" => 26, "family_status" => :married } #
 end
 
  def logout #Logout system v0.0 | 
