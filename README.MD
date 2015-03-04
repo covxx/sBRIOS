@@ -38,6 +38,7 @@ Current TODO:
 	- [x] Enable file opening and closing 
 	- [ ] Enable file output
 	- [ ] Enable file editing (last to be done)
+- [ ] Add screen clearing
 
 Issues:
 -------------
@@ -50,6 +51,8 @@ Ideas:
 Change log:
 -------------
 + 00.00.40
+	+ Logout system complete 
+	+ Work on menu
 	+ Fixed file opening option 
 	+ Login system v0.5 complete (still needs encryption before release)
 + 00.00.26

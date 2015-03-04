@@ -23,11 +23,13 @@ end
 	user = File.read("user.txt, r") 
 	print "Checking if first run \n"
 	if #{frun} == 1
+		system "clear" or system "cls"
 		print "Booting mBRIOS please wait \n"
 			login()
 		elsif #{frun} == 0 #Starts the first run process 
+			system "clear" or system "cls"
 			print "Starting first run process, please wait \n"
-	#Here will call the first boot process
+			firstboot()
 	end
 
   def firstboot
@@ -63,10 +65,12 @@ end
 	end
 end
  
- def logout #Logout system v0.0 | 
+ def logout #Logout system v0.50 | Not sure what else is needed yet
 	Print "Logging out.. \n"
 	sleep(3.seconds)
-	#Needs to close threads and files
+	f.close  #Just in case something is open 
+	system "clear" or system "cls" #Clears screen
+	login()
  end
 	
  def menu
@@ -80,23 +84,18 @@ end
 	print "5. Exit \n"
 	print "What would you like to launch?: \n"
 	app_launch = gets.chomp
-	#Below launches which program the user choice
-	if {app_launch} == notes #This is causing an issue and so are the app launch things
+	if #{app_launch} == notes #This is causing an issue and so are the app launch things
 	  notes_app()
-	end
-=begin
-		elsif {app_launch} == Calender
+		elsif #{app_launch} == Calender
 			calender_app()
-		end
-			elsif {app_launch} == Text Editor 
+			elsif #{app_launch} == Text Editor 
 				txteditor_app()
-			end
-				elsif {app_launch} == Logout
+				elsif #{app_launch} == Logout
 					logout() #Homegrown stuff 
-				end
-				elsif {app_launch} == exit
-					exit  #using the built in exit function 
-=end
+					elsif #{app_launch} == exit
+						exit  #using the built in exit function 
+	end
+
 	
  def notes_app
   Thread.new { #this may be a good to have each app work on its own thread
@@ -108,8 +107,7 @@ end
 	Print "Loading file.. \n"
 	file.open("file_name_na, r+") #grabs the 'file_name_na' var and uses it to open the file in read and write mode(not sure if this works))
 	sleep(3.seconds)
-	end
        }
-
+ end
 
 boot() #this is also causing an issue | Only method that needs to be called 
