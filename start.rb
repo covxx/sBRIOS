@@ -3,7 +3,7 @@
 #m|B|R|I|O|S
 #Modern Basic Ruby Input Output System
 #https://github.com/covxx/mBRIOS
-#@covxx // contact me: covxx@cvoxo.com //
+#//@covxx // contact me: covxx@cvoxo.com //
 #--------------------
 require 'io/console' #Working with files
 require 'FileUtils'  #Working with files
@@ -53,18 +53,16 @@ end
 	print "Welcome to mBRIOS \n" 
 	#print "Users:" #Once multi user support is added this will print out the users 
 	#print "What user do you want to log in as: " #Grabs user name to login 
+	loop do 
 	print "Type your user name: \n"
 	user_name_login = gets.chomp
 	Print "Type your password: \n"
 	user_pass_login = gets.chomp 
-		if user_name_login == user
+	break if user_pass_login == pass
 		menu()
-			else #HAS to be a cleaner way to do this but for now this works
-			print "No user name found, please try again \n"
-			login() 
-		end
+	end
 end
-
+ 
  def logout #Logout system v0.0 | 
 	Print "Logging out.. \n"
 	sleep(3.seconds)
