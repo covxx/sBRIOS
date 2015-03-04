@@ -49,7 +49,7 @@ end
 				File.open("fr.txt, w") {|f| f.write("1")}
 	end
   
-  def login #Login system v0.01 | no multi user support till later
+  def login #Login system v0.50 | no multi user support till later
 	print "Welcome to mBRIOS \n" 
 	#print "Users:" #Once multi user support is added this will print out the users 
 	#print "What user do you want to log in as: " #Grabs user name to login 

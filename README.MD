@@ -47,6 +47,8 @@ Ideas:
 
 Change log:
 -------------
++ 00.00.35
+	+ Login system v0.5 complete (still needs encryption before release)
 + 00.00.26
 	+ Typo work 
 	+ Added documentation to the README
