@@ -17,7 +17,7 @@ Planned features:
 - [ ] Text editor
 - [ ] Multi user support
 - [x] Multi threading of applications 
-- [ ] full encryption
+- [ ] Encryption
 
 
 Current TODO:
@@ -26,14 +26,16 @@ Current TODO:
 	- [ ] Create needed files/folders 
 	- [ ] First run configuration save to file 
 - [ ] Encryption working
-	- [ ] gem implantation
+	- [x] gem implantation
 	- [ ] encrypt setting password on first run
 	- [ ] file encryption working 
 		
 - [ ] login system working
+	- [x] Login system implemented 
+	- [ ] Read user password 
 - [x] Enable Multi Thread support
 - [ ] Get notes working
-	- [ ] Enable file opening and closing 
+	- [x] Enable file opening and closing 
 	- [ ] Enable file output
 	- [ ] Enable file editing (last to be done)
 
@@ -47,7 +49,8 @@ Ideas:
 
 Change log:
 -------------
-+ 00.00.35
++ 00.00.40
+	+ Fixed file opening option 
 	+ Login system v0.5 complete (still needs encryption before release)
 + 00.00.26
 	+ Typo work 

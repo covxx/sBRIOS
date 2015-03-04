@@ -46,7 +46,7 @@ end
 				print "Password correct! \n"
 				print "One moment please.. \n"
 				sleep(3.seconds)
-				File.open("fr.txt, w") {|f| f.write("1")}
+				File.open("fr.txt, r") {|f| f.write("1")}
 	end
   
   def login #Login system v0.50 | no multi user support till later
