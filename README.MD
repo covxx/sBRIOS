@@ -6,9 +6,6 @@
 + |S|ystem
 
 -------------
-BRIOS is a low level 'modern OS' made in Ruby. Started as a crazy idea for my senior final 
-project. This runs from terminal by using "ruby start.rb") like anything else. As I'm still learning
-Ruby this is going be a little 'hacked' together.
 
 Planned features:
 -------------
