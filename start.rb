@@ -18,6 +18,7 @@ require 'yaml'       #Using YAML
 end	
 
  def boot
+    system "clear" or system "cls" #Clears screen
 	print "Starting mBRIOS \n"
 	sleep(2.seconds)
 	user = File.read("user.txt, r") 
@@ -33,6 +34,7 @@ end
 	end
 
   def firstboot
+  	system "clear" or system "cls" #Clears screen
 	print "Welcome to mBRIOS \n"
 	sleep(1.seconds)
 	print "This is the first boot process \n"
@@ -52,6 +54,7 @@ end
 	end
   
   def login #Login system v0.50 | no multi user support till later
+	system "clear" or system "cls" #Clears screen
 	print "Welcome to mBRIOS \n" 
 	#print "Users:" #Once multi user support is added this will print out the users 
 	#print "What user do you want to log in as: " #Grabs user name to login 
@@ -74,6 +77,7 @@ end
  end
 	
  def menu
+ 	system "clear" or system "cls" #Clears screen
 	print "Welcome to your desktop #{user_name}, Today's date is"+ time.inspect
 	print "------------------------------------- \n"
 	print "Menu \n"
@@ -91,7 +95,7 @@ end
 			elsif #{app_launch} == Text Editor 
 				txteditor_app()
 				elsif #{app_launch} == Logout
-					logout() #Homegrown stuff 
+					logout() #Starts the logout process
 					elsif #{app_launch} == exit
 						exit  #using the built in exit function 
 	end
@@ -99,6 +103,7 @@ end
 	
  def notes_app
   Thread.new { #this may be a good to have each app work on its own thread
+	system "clear" or system "cls" #Clears screen
 	Print "Loading notes, please wait \n"
 	sleep(3.seconds)
 	Print "Which file would you like to open \n"
