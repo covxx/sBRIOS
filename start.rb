@@ -10,7 +10,6 @@ require 'FileUtils'  #Working with files
 require 'bcrypt'     #Encryption 
 require 'time'       #Time management  
 require 'thread'     #Multi Threading support
-require 'yaml'       #Using YAML 
 
  def debug #simple thing to help debugging 
 	sleep(4.minutes)

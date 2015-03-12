@@ -47,6 +47,8 @@ Ideas:
 
 Change log:
 -------------
++ 00.00.41 
+	+ Removed unnecessary gems
 + 00.00.40
 	+ Logout system complete 
 	+ Work on menu
