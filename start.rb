@@ -59,27 +59,27 @@ end
 				print "One moment please.. \n"
 				sleep(3.seconds)
 				File.open("config.txt, r") {|f| f.write("1")}
-				File.new "#{user_name}" #Creates file for user
+				File.new "user/#{user_name}" #Creates file for user
 				print "loading login, please wait"
 				login()
 	end
   
-  def login #Login system v0.50 | no multi user support till later
+  def login #Login system v0.50 | no multi user support
 	system "clear" or system "cls" #Clears screen
 	print "Welcome to sBRIOS \n" 
-	#print "Users:" #Once multi user support is added this will print out the users 
-	#print "What user do you want to log in as: " #Grabs user name to login 
 	loop do 
-	print "Type your user name: \n"
-	user_name_login = gets.chomp
-	Print "Type your password: \n"
-	user_pass_login = gets.chomp 
-	break if user_pass_login == pass
-		menu()
+		print "Type your user name: \n"
+		user_name_login = gets.chomp
+		file.open("user/#{user_name_login}")
+		Print "Type your password: \n"
+		user_pass_login = gets.chomp 
+		break if user_pass_login == pass
+			menu()
+		end
 	end
-end
  
  def logout #Logout system v0.50 | Not sure what else is needed yet
+	system "clear" or system "cls"
 	Print "Logging out.. \n"
 	sleep(3.seconds)
 	f.close  #Just in case something is open 
