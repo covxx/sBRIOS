@@ -11,12 +11,14 @@ require 'bcrypt'     #Encryption
 require 'time'       #Time management  
 require 'thread'     #Multi Threading support
 
+user_name = " "
+
  def debug #simple thing to help debugging 
 	sleep(4.minutes)
     Print "Code has finished \n"
 end	
 
- def boot
+ def boot #Boot process 
     system "clear" or system "cls" #Clears screen
 	print "Starting sBRIOS \n"
 	sleep(2.seconds)
@@ -33,7 +35,7 @@ end
 			firstboot()
 	end
 
-  def firstboot
+  def firstboot #First boot process for config-in and creates user | v0.50
   	system "clear" or system "cls" #Clears screen
 	print "Welcome to sBRIOS \n"
 	sleep(1.seconds)
@@ -87,28 +89,28 @@ end
 	login()
  end
 	
- def menu
+ def menu #menu System | 
  	system "clear" or system "cls" #Clears screen
-	print "Welcome to your desktop #{user_name}, Today's date is"+ time.inspect
+	print "Welcome to your desktop #{user_name_login}, Today's date is"+ time.inspect 
 	print "------------------------------------- \n"
 	print "Menu \n"
-	print "1. Notes \n"
+	print "1. Text Editor \n"
 	print "2. Calender \n"
-	print "3. Text Editor \n"
-	print "4. Log out \n"
-	print "5. Exit \n"
+	print "3. Notes \n"
+	print "4. Exit \n"
+	print "5. Logout \n"
 	print "What would you like to launch?: \n"
 	app_launch = gets.chomp
 	if #{app_launch} == notes #This is causing an issue and so are the app launch things
-	  notes_app()
+	  txteditor_app()
 		elsif #{app_launch} == Calender
 			calender_app()
 			elsif #{app_launch} == Text Editor 
-				txteditor_app()
+				notes_app()
 				elsif #{app_launch} == Logout
-					logout() #Starts the logout process
+					exit #using the built in exit function 
 					elsif #{app_launch} == exit
-						exit  #using the built in exit function 
+						logout()  #Log out process 
 	end
 
 	
