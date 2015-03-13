@@ -20,8 +20,9 @@ end
     system "clear" or system "cls" #Clears screen
 	print "Starting sBRIOS \n"
 	sleep(2.seconds)
-	user = File.read("user.txt, r") 
+	#user = File.read("user.txt, r") This needs to changed to new login user method
 	print "Checking if first run \n"
+	frun = File.read("config/fr.txt")
 	if #{frun} == 1
 		system "clear" or system "cls"
 		print "Booting sBRIOS please wait \n"
@@ -38,10 +39,18 @@ end
 	sleep(1.seconds)
 	print "This is the first boot process \n"
 	sleep(1.seconds)
+	print "Installing... \n" 
+	FileUtils.mkdir_p(config) #Creates folder for config storage
+	FileUtils.mkdir_p(user) #Creates folder for user storage
+	FileUtils::mkdir_p 'apps/texteditor' #Creates folder for text editor app space
+	FileUtils.mkdir_p(notes) #Creates folder for notes app space
+	FileUtils.mkdir_p(calc) #Creates folder for Calculator app space, not sure if needed
+	File.new "config/fr.txt"
+	Sleep(5.seconds)
 	print "Choose a user name: \n"
 		user_name = gets.chomp
 	print "Choose a password: \n"
-		user_pass = gets.chomp #this needs to be encrypted  
+		user_pass = gets.chomp #This needs to be encrypted  
 	print "Confirm your password: \n"  
 		userpass_confirm = gets.chomp
 			if 
@@ -49,7 +58,10 @@ end
 				print "Password correct! \n"
 				print "One moment please.. \n"
 				sleep(3.seconds)
-				File.open("fr.txt, r") {|f| f.write("1")}
+				File.open("config.txt, r") {|f| f.write("1")}
+				File.new "#{user_name}" #Creates file for user
+				print "loading login, please wait"
+				login()
 	end
   
   def login #Login system v0.50 | no multi user support till later

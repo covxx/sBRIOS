@@ -1,4 +1,4 @@
-+ |m|odern
++ |s|imulated
 + |B|asic 
 + |R|uby
 + |I|nput
@@ -19,14 +19,13 @@ Planned features:
 
 Current TODO:
 -------------
-- [ ] Finish first run process
-	- [ ] Create needed files/folders 
-	- [ ] First run configuration save to file 
+- [x] Finish first run process
+	- [x] Create needed files/folders 
+	- [x] First run configuration save to file 
 - [ ] Encryption working
 	- [x] gem implantation
 	- [ ] encrypt setting password on first run
 	- [ ] file encryption working 
-		
 - [ ] login system working
 	- [x] Login system implemented 
 	- [ ] Read user password 
@@ -41,19 +40,24 @@ Issues:
 -------------
 + issue #01: Not running due to some dumb issue
  
-Ideas:
+Future Update Ideas:
 -------------
 + Windows like login 'screen' 
 
+
 Change log:
 -------------
++ 00.01.00
+	+ Finished first boot process
+	+ Implemented new login system 
 + 00.00.41 
+	+ Changed name 
 	+ Removed unnecessary gems
 + 00.00.40
 	+ Logout system complete 
 	+ Work on menu
 	+ Fixed file opening option 
-	+ Login system v0.5 complete (still needs encryption before release)
+	+ Login system v0.5 complete (still needs encryption before v1)
 + 00.00.26
 	+ Typo work 
 	+ Added documentation to the README
@@ -81,7 +85,7 @@ Change log:
 + 0.0.01
 	+ Ground work started 
 
-Documentation
+Documentation 
 -------------
 ---How stuff works or *will* *work*, mostly for myself to remember my thought process.
 + mBRIOS
