@@ -1,8 +1,8 @@
 
 #--------------------
-#m|B|R|I|O|S
-#Modern Basic Ruby Input Output System
-#https://github.com/covxx/mBRIOS
+#s|B|R|I|O|S
+#Simulated Basic Ruby Input Output System
+#https://github.com/covxx/sBRIOS
 #//@covxx // contact me: covxx@cvoxo.com //
 #--------------------
 require 'io/console' #Working with files
@@ -18,13 +18,13 @@ end
 
  def boot
     system "clear" or system "cls" #Clears screen
-	print "Starting mBRIOS \n"
+	print "Starting sBRIOS \n"
 	sleep(2.seconds)
 	user = File.read("user.txt, r") 
 	print "Checking if first run \n"
 	if #{frun} == 1
 		system "clear" or system "cls"
-		print "Booting mBRIOS please wait \n"
+		print "Booting sBRIOS please wait \n"
 			login()
 		elsif #{frun} == 0 #Starts the first run process 
 			system "clear" or system "cls"
@@ -34,7 +34,7 @@ end
 
   def firstboot
   	system "clear" or system "cls" #Clears screen
-	print "Welcome to mBRIOS \n"
+	print "Welcome to sBRIOS \n"
 	sleep(1.seconds)
 	print "This is the first boot process \n"
 	sleep(1.seconds)
@@ -54,7 +54,7 @@ end
   
   def login #Login system v0.50 | no multi user support till later
 	system "clear" or system "cls" #Clears screen
-	print "Welcome to mBRIOS \n" 
+	print "Welcome to sBRIOS \n" 
 	#print "Users:" #Once multi user support is added this will print out the users 
 	#print "What user do you want to log in as: " #Grabs user name to login 
 	loop do 
