@@ -1,44 +1,47 @@
+-------------
 + |s|imulated
 + |B|asic 
 + |R|uby
 + |I|nput
 + |O|utput
 + |S|ystem
-
+-------------
+Status: Pre-Alpha
 -------------
 
 Planned features:
 -------------
-- [ ] Calculator
-- [ ] Notes
-- [ ] Text editor
 - [ ] Multi user support
-- [x] Multi threading of applications 
+- [x] Multi threading
+- [ ] Text editor
+- [ ] Calculator
 - [ ] Encryption
+- [ ] Notes
+- [ ] Working
 
 
 Current TODO:
 -------------
+- [x] Add screen clearing
+- [x] Enable Multi Thread support
 - [x] Finish first run process
 	- [x] Create needed files/folders 
 	- [x] First run configuration save to file 
-- [ ] Encryption working
+- [ ] Encryption 
 	- [x] gem implantation
 	- [ ] encrypt setting password on first run
 	- [ ] file encryption working 
-- [ ] login system working
+- [ ] login system 
 	- [x] Login system implemented 
 	- [ ] Read user password 
-- [x] Enable Multi Thread support
-- [ ] Get notes working
+- [ ] Notes App
 	- [x] Enable file opening and closing 
 	- [ ] Enable file output
 	- [ ] Enable file editing (last to be done)
-- [ ] Add screen clearing
 
 Issues:
 -------------
-+ issue #01: Not running due to some dumb issue
++ Issue #001: Not running due to some dumb issue
  
 Future Update Ideas:
 -------------
@@ -47,9 +50,12 @@ Future Update Ideas:
 
 Change log:
 -------------
-+ 00.01.00
++ 00.00.50
 	+ Finished first boot process
 	+ Implemented new login system 
+	+ Work on new login system
+	+ Fixed first boot process bug 
+	+ Code cleaning
 + 00.00.41 
 	+ Changed name 
 	+ Removed unnecessary gems
@@ -74,29 +80,19 @@ Change log:
 	+ Other smaller things
 	+ Removed some unnecessary things from read me
 + 00.00.09
-	+ Move first boot process to own statement 
+	+ Move first boot process to own method 
 	+ Started work on the menu
 	+ Started work on login system 
 	+ Started work on password encryption 
 	+ fixed unnecessary syntax (thanks @nulljosh)
 	+ Updated README 
 	+ Small organization changes
-	
 + 0.0.01
 	+ Ground work started 
 
 Documentation 
 -------------
----How stuff works or *will* *work*, mostly for myself to remember my thought process.
-+ mBRIOS
-
----I'd love to call this an OS but it really isn't, its more of an OS emulator(that sounds right) than an actual OS. Since Ruby wasn't made to do this everything is text based, a GUI is non existent.  
-
-
-+ Login system 
-
----The login system is fairy simple; it reads user name and password from the user.txt yaml file and then uses an if statement to check if they're equal. This may not be the best way, there may even be something built in but for now it works.
-
++ I'll get around to this
 
 
 
