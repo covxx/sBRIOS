@@ -29,13 +29,13 @@ Current TODO:
 - [x] Finish first run process
 	- [x] Create needed files/folders 
 	- [x] First run configuration save to file 
+- [x] login system 
+	- [x] Login system implemented 
+	- [x] Read user password 
 - [ ] Encryption 
 	- [x] gem implantation
 	- [ ] encrypt setting password on first run
 	- [ ] file encryption working 
-- [ ] login system 
-	- [x] Login system implemented 
-	- [ ] Read user password 
 - [ ] Notes App
 	- [x] Enable file opening and closing 
 	- [ ] Enable file output
@@ -52,6 +52,8 @@ Future Update Ideas:
 
 Change log:
 -------------
++ 00.00.70
+	+ Login system finished 
 + 00.00.50
 	+ Finished first boot process
 	+ Implemented new login system 
