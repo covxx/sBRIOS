@@ -19,7 +19,7 @@ Planned features:
 - [ ] Calculator
 - [ ] Encryption
 - [ ] Notes
-- [ ] Working
+- [ ] Working /s
 
 
 Current TODO:
