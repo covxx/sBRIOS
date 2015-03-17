@@ -11,8 +11,6 @@ require 'bcrypt'     #Encryption
 require 'time'       #Time management  
 require 'thread'     #Multi Threading support
 
-user_name = " "
-
  def debug #simple thing to help debugging 
 	sleep(4.minutes)
     Print "Code has finished \n"
@@ -22,7 +20,6 @@ end
     system "clear" or system "cls" #Clears screen
 	print "Starting sBRIOS \n"
 	sleep(2.seconds)
-	#user = File.read("user.txt, r") This needs to changed to new login user method
 	print "Checking if first run \n"
 	frun = File.read("config/fr.txt")
 	if #{frun} == 1
@@ -51,18 +48,22 @@ end
 	Sleep(5.seconds)
 	print "Choose a user name: \n"
 		user_name = gets.chomp
-	print "Choose a password: \n"
-		user_pass = gets.chomp #This needs to be encrypted  
-	print "Confirm your password: \n"  
-		userpass_confirm = gets.chomp
-			if 
+		loop do
+			print "Choose a password: \n"
+			user_pass = gets.chomp #This needs to be encrypted  
+			print "Confirm your password: \n"  
+			userpass_confirm = gets.chomp
+			break if 
 				user_pass == userpass_confirm #This seemed like the simplest way to confirm passwords, remember Ruby was not made for this 
 				print "Password correct! \n"
+				file.new "user/#{pass.txt}"
+				File.open("user/pass.txt, r") {|f| f.write(#{userpass_confirm})} 
 				print "One moment please.. \n"
 				sleep(3.seconds)
 				File.open("config.txt, r") {|f| f.write("1")}
 				File.new "user/#{user_name}" #Creates file for user
 				print "loading login, please wait"
+				f.close  #Just in case something is open 
 				login()
 	end
   
@@ -73,6 +74,7 @@ end
 		print "Type your user name: \n"
 		user_name_login = gets.chomp
 		file.open("user/#{user_name_login}")
+		pass = File.read("pass.txt, r")
 		Print "Type your password: \n"
 		user_pass_login = gets.chomp 
 		break if user_pass_login == pass
