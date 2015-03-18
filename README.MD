@@ -96,7 +96,7 @@ Change log:
 
 Documentation 
 -------------
-+ I'll get around to this
++ sBRIOS is a simulated input output system, kinda like DOS but in ruby and non bootable.
 
 
 
