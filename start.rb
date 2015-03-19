@@ -12,14 +12,14 @@ require 'time'       #Time management
 require 'thread'     #Multi Threading support
 
  def debug #simple thing to help debugging 
-	sleep(4.minutes)
+	sleep(4)
     Print "Code has finished \n"
 end	
 
  def boot #Boot process 
     system "clear" or system "cls" #Clears screen
 	print "Starting sBRIOS \n"
-	sleep(2.seconds)
+	sleep(2)
 	print "Checking if first run \n"
 	frun = File.read("config/fr.txt")
 	if #{frun} == 1
@@ -31,13 +31,13 @@ end
 			print "Starting first run process, please wait \n"
 			firstboot()
 	end
-
+          
   def firstboot #First boot process for config-in and creates user | v0.50
   	system "clear" or system "cls" #Clears screen
 	print "Welcome to sBRIOS \n"
-	sleep(1.seconds)
+	sleep(1)
 	print "This is the first boot process \n"
-	sleep(1.seconds)
+	sleep(1)
 	print "Installing... \n" 
 	FileUtils.mkdir_p(config) #Creates folder for config storage
 	FileUtils.mkdir_p(user) #Creates folder for user storage
@@ -45,7 +45,7 @@ end
 	FileUtils.mkdir_p(notes) #Creates folder for notes app space
 	FileUtils.mkdir_p(calc) #Creates folder for Calculator app space, not sure if needed
 	File.new "config/fr.txt"
-	Sleep(5.seconds)
+	Sleep(5)
 	print "Choose a user name: \n"
 		user_name = gets.chomp
 		loop do
@@ -59,7 +59,7 @@ end
 				file.new "user/#{pass.txt}"
 				File.open("user/pass.txt, r") {|f| f.write(#{userpass_confirm})} 
 				print "One moment please.. \n"
-				sleep(3.seconds)
+				sleep(3)
 				File.open("config.txt, r") {|f| f.write("1")}
 				File.new "user/#{user_name}" #Creates file for user
 				print "loading login, please wait"
@@ -85,7 +85,7 @@ end
  def logout #Logout system v0.50 | Not sure what else is needed yet
 	system "clear" or system "cls"
 	Print "Logging out.. \n"
-	sleep(3.seconds)
+	sleep(3)
 	f.close  #Just in case something is open 
 	system "clear" or system "cls" #Clears screen
 	login()
@@ -118,16 +118,16 @@ end
 
 	
  def notes_app
-  Thread.new { #this may be a good to have each app work on its own thread
+  Thread.new { #this may be a good to have each app work on its own thread for performance
 	system "clear" or system "cls" #Clears screen
 	Print "Loading notes, please wait \n"
-	sleep(3.seconds)
+	sleep(3)
 	Print "Which file would you like to open \n"
 	Dir.entries(folder) #prints out the file names so user can choose
 	file_name_na = gets.chomp
 	Print "Loading file.. \n"
 	file.open("file_name_na, r+") #grabs the 'file_name_na' var and uses it to open the file in read and write mode(not sure if this works))
-	sleep(3.seconds)
+	sleep(3)
        }
  end
 
