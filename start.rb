@@ -96,6 +96,7 @@ end
 	print "Welcome to your desktop #{user_name_login}, Today's date is"+ time.inspect 
 	print "------------------------------------- \n"
 	print "Menu \n"
+	print "------------------------------------- \n"
 	print "1. Text Editor \n"
 	print "2. Calender \n"
 	print "3. Notes \n"
