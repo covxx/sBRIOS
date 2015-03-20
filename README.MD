@@ -32,6 +32,11 @@ Current TODO:
 - [x] login system 
 	- [x] Login system implemented 
 	- [x] Read user password 
+- [ ] Calculator App
+	- [ ] Add 2+ number support
+	- [ ] Finish Division sub menu
+	- [ ] Finish Multiplication sub menu
+	- [ ] Finish addition sub menu
 - [ ] Encryption 
 	- [x] gem implantation
 	- [ ] encrypt setting password on first run
@@ -52,6 +57,10 @@ Future Update Ideas:
 
 Change log:
 -------------
++ 00.00.75
+	+ Added calculator to menu
+	+ Work on calculator 
+	+ Debugging
 + 00.00.70
 	+ Login system finished 
 + 00.00.50
