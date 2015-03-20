@@ -105,7 +105,13 @@ Change log:
 
 Documentation 
 -------------
-+ sBRIOS is a simulated input output system, kinda like DOS but in ruby and non bootable.
++ How to run: // when it actually works 
+	+  1. With ruby installed pull up a shell and get the thread gem
+	+  2. After you have the thread gem run 'start.rb' from a ruby shell 
+	+  3. Profit 
+	
++ Dependences required:
+	+ Thread
 
 
 
