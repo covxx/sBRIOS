@@ -1,5 +1,5 @@
 #--------------------
-#s|B|R|I|O|S
+#/s/B/R/I/O/S/
 #Simulated Basic Ruby Input Output System
 #https://github.com/covxx/sBRIOS
 #//@covxx // contact me: covxx@cvoxo.com //
@@ -93,9 +93,9 @@ end
  def menu #menu System | 
  	system "clear" or system "cls" #Clears screen
 	print "Welcome to your desktop #{user_name_login}, Today's date is"+ time.inspect 
-	print "------------------------------------- \n"
+	print "-------------------- \n"
 	print "Menu \n"
-	print "------------------------------------- \n"
+	print "-------------------- \n"
 	print "1. Text Editor \n"
 	print "2. Calender \n"
 	print "3. Notes \n"
@@ -122,7 +122,7 @@ end
 	print "Loading calculator... \n"	
 	sleep(3)
 	print "Menu \n"
-	print "------------------------------------ \n"
+	print "-------------------- \n"
 	print "1. Addition \n"
 	print "2. Subtraction \n"
 	print "3. Division \n"
