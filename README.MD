@@ -61,6 +61,7 @@ Change log:
 	+ Added calculator to menu
 	+ Work on calculator 
 	+ Debugging
+	+ Clean up
 + 00.00.70
 	+ Login system finished 
 + 00.00.50
