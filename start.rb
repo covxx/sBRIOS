@@ -1,4 +1,3 @@
-
 #--------------------
 #s|B|R|I|O|S
 #Simulated Basic Ruby Input Output System
@@ -100,23 +99,58 @@ end
 	print "1. Text Editor \n"
 	print "2. Calender \n"
 	print "3. Notes \n"
-	print "4. Exit \n"
-	print "5. Logout \n"
+	print "4. Calculator \n"
+	print "9. Exit \n"
+	print "10. Logout \n"
 	print "What would you like to launch?: \n"
 	app_launch = gets.chomp
 	if #{app_launch} == notes #This is causing an issue and so are the app launch things
-	  txteditor_app()
-		elsif #{app_launch} == Calender
+		txteditor_app()
+		elsif #{app_launch} == calender
 			calender_app()
-			elsif #{app_launch} == Text Editor 
-				notes_app()
-				elsif #{app_launch} == Logout
-					exit #using the built in exit function 
-					elsif #{app_launch} == exit
-						logout()  #Log out process 
+		elsif #{app_launch} == text editor 
+			notes_app()
+		elsif #{app_launch} == logout
+			logout() #home-made logout process
+		elsif #{app_launch} == exit
+			exit #using the built in exit function 
 	end
 
-	
+ def calc_app #Calculator app 
+	Thread.new {
+ 	system "clear" or system "cls" #Clears screen
+	print "Loading calculator... \n"	
+	sleep(3)
+	print "Menu \n"
+	print "------------------------------------ \n"
+	print "1. Addition \n"
+	print "2. Subtraction \n"
+	print "3. Division \n"
+	print "4. Multiplication \n"
+	print "5. Menu"
+	print "Which process would you like to do?: \n"
+	calc_proc_sel = gets.chomp #Breaking up into sub menus
+	if #{calc_proc_sel} == 1 
+		 	system "clear" or system "cls" #Clears screen
+			"Calculator Addition module loaded..."
+			print "Enter the first number: \n"
+			fnum = gets.chomp
+			print "Enter the second number: \n"
+			snum = gets.chomp
+			fnum + snum #Prints out the sum // just needs to loop
+		elsif #{calc_proc_sel} == 2
+		 	system "clear" or system "cls" #Clears screen
+
+		elsif #{calc_proc_sel} == 3
+		 	system "clear" or system "cls" #Clears screen
+
+		elsif #{calc_proc_sel} == 4
+		 	system "clear" or system "cls" #Clears screen
+
+		elsif #{calc_proc_sel} == 5
+			menu()
+	end
+	}
  def notes_app
   Thread.new { #this may be a good to have each app work on its own thread for performance
 	system "clear" or system "cls" #Clears screen
