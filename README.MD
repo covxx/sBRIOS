@@ -16,7 +16,7 @@ Planned features:
 - [ ] Multi user support
 - [x] Multi threading
 - [ ] Text editor
-- [ ] Calculator
+- [x] Calculator
 - [ ] Encryption
 - [ ] Notes
 - [ ] Working /s
@@ -34,9 +34,9 @@ Current TODO:
 	- [x] Read user password 
 - [ ] Calculator App
 	- [ ] Add 2+ number support
-	- [ ] Finish Division sub menu
-	- [ ] Finish Multiplication sub menu
-	- [ ] Finish addition sub menu
+	- [x] Finish Division sub menu
+	- [x] Finish Multiplication sub menu
+	- [x] Finish addition sub menu
 - [ ] Encryption 
 	- [x] gem implantation
 	- [ ] encrypt setting password on first run
@@ -57,6 +57,8 @@ Future Update Ideas:
 
 Change log:
 -------------
++ 00.00.80
+	+ Finished calculator
 + 00.00.75
 	+ Added calculator to menu
 	+ Work on calculator 
