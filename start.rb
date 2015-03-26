@@ -131,7 +131,6 @@ end
 	print "Which process would you like to do?: \n"
 	calc_proc_sel = gets.chomp #Breaking up into sub menus
 	if #{calc_proc_sel} == 1 
-		 	system "clear" or system "cls" #Clears screen
 			"Calculator Addition module loaded..."
 			print "Enter the first number: \n"
 			fnum = gets.chomp
@@ -140,15 +139,33 @@ end
 			fnum + snum #Prints out the sum // just needs to loop
 		elsif #{calc_proc_sel} == 2
 		 	system "clear" or system "cls" #Clears screen
-
-		elsif #{calc_proc_sel} == 3
+			"Calculator subtraction module loaded..."
+			print "Enter the first number: \n"
+			fnum = gets.chomp
+			print "Enter the second number: \n"
+			snum = gets.chomp
+			fnum - snum #Prints out the difference // just needs to loop
+		elsif #{calc_proc_sel} == 3 #I need to make this integer 
 		 	system "clear" or system "cls" #Clears screen
-
+			"Calculator division module loaded..."
+			print "Enter the first number: \n"
+			fnum = gets.chomp
+			print "Enter the second number: \n"
+			snum = gets.chomp
+			fnum / snum #Prints out the dividend // just needs to loop
 		elsif #{calc_proc_sel} == 4
 		 	system "clear" or system "cls" #Clears screen
-
+			"Calculator multiplication module loaded..."
+			print "Enter the first number: \n"
+			fnum = gets.chomp
+			print "Enter the second number: \n"
+			snum = gets.chomp
+			fnum * snum #Prints out the product // just needs to loop
 		elsif #{calc_proc_sel} == 5
 			menu()
+		else  #prints error message 
+			print "error \n"
+			calc_app()
 	end
 	}
  def notes_app
