@@ -122,6 +122,7 @@ end
 	print "Loading calculator... \n"	
 	sleep(3)
 	print "Menu \n"
+	print "For now this only supports 2 numbers at a time \n"
 	print "-------------------- \n"
 	print "1. Addition \n"
 	print "2. Subtraction \n"
