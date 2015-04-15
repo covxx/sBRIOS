@@ -8,7 +8,9 @@
 + |S|ystem
 
 -------------
-Status: Pre-Alpha
+Status: Alpha
+
+The codes there it just doesn't run 
 -------------
 
 Planned features:
@@ -49,11 +51,6 @@ Current TODO:
 Issues:
 -------------
 + Issue #001: Not running due to some dumb issue
- 
-Future Update Ideas:
--------------
-+ Windows like login 'screen' 
-
 
 Change log:
 -------------
@@ -108,7 +105,7 @@ Change log:
 
 Documentation 
 -------------
-+ How to run: // when it actually works 
++ How to run: // (when it actually works)
 	+  1. With ruby installed pull up a shell and get the thread gem
 	+  2. After you have the thread gem run 'start.rb' from a ruby shell 
 	+  3. Profit 
