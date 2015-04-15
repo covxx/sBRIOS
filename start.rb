@@ -2,7 +2,7 @@
 #/s/B/R/I/O/S/
 #Simulated Basic Ruby Input Output System
 #https://github.com/covxx/sBRIOS
-#//@covxx // contact me: covxx@cvoxo.com //
+#//@covxx // contact: covxx@cvoxo.com //
 #--------------------
 require 'io/console' #Working with files
 require 'FileUtils'  #Working with files
