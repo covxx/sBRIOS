@@ -2,7 +2,7 @@
 #/s/B/R/I/O/S/
 #Simulated Basic Ruby Input Output System
 #https://github.com/covxx/sBRIOS
-#//@covxx // contact: covxx@cvoxo.com //
+#//@covxx // contact: covxx@icloud.com //
 #--------------------
 require 'io/console' #Working with files
 require 'FileUtils'  #Working with files
@@ -183,4 +183,4 @@ end
        }
  end
 
-boot() #this is also causing an issue | Only method that needs to be called 
+boot() #this is also causing an issue,maybe due to placment	| Only method that needs to be called 
