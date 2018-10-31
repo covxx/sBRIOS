@@ -50,7 +50,7 @@ Current TODO:
 
 Issues:
 -------------
-+ Issue #001: Not running due to some dumb issue
++ Issue #001: Will not run
 
 Change log:
 -------------
